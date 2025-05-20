@@ -1,4 +1,28 @@
 document.addEventListener('DOMContentLoaded', () => {
+  const sections = document.querySelectorAll('section');
+  const navLinks = document.querySelectorAll('nav ul li a');
+  const homeSection = document.querySelector('#home');
+
+  // Default to showing the home section
+  homeSection.style.display = 'block';
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      
+      const targetSection = document.querySelector(e.target.getAttribute('href'));
+
+      // Hide all sections
+      sections.forEach(section => {
+        section.style.display = 'none';
+      });
+
+      // Show the target section
+      targetSection.style.display = 'block';
+    });
+  });
+
+  // Redeem Points functionality
   const redeemForm = document.getElementById('redeem-form');
   const redeemResult = document.getElementById('redeem-result');
   const pointsElement = document.querySelector('#profile p:last-of-type');
