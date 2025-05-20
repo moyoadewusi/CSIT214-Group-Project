@@ -1,15 +1,19 @@
-/* Default (Light Mode) Styles */
+/* Base Styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
-  transition: background-color 0.5s ease;
+  color: #333;
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 nav {
   background-color: #333;
   padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 nav ul {
@@ -27,6 +31,13 @@ nav ul li {
 nav ul li a {
   color: white;
   text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #555;
 }
 
 section {
@@ -60,12 +71,13 @@ form label {
   margin-bottom: 10px;
 }
 
-form select {
+form select, input[type="text"] {
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
   border-radius: 5px;
   border: 1px solid #ccc;
+  font-size: 16px;
 }
 
 form button {
@@ -75,6 +87,7 @@ form button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 form button:hover {
@@ -84,6 +97,40 @@ form button:hover {
 #redeem-result {
   margin-top: 20px;
   font-weight: bold;
+}
+
+#undo {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#undo:hover {
+  background-color: #0056b3;
+}
+
+/* Loading Spinner */
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #333;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1001;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
 }
 
 /* Dark Mode Styles */
@@ -106,12 +153,30 @@ form button:hover {
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
   }
 
+  form select, input[type="text"] {
+    background-color: #555;
+    color: #e0e0e0;
+    border: 1px solid #777;
+  }
+
   form button {
     background-color: #555;
   }
 
   form button:hover {
     background-color: #777;
+  }
+
+  #undo {
+    background-color: #28a745;
+  }
+
+  #undo:hover {
+    background-color: #218838;
+  }
+
+  .spinner {
+    border-left-color: #e0e0e0;
   }
 }
 
@@ -122,7 +187,7 @@ form button:hover {
     align-items: center;
   }
 
-  form select {
+  form select, input[type="text"] {
     width: 100%;
   }
 }
