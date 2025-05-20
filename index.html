@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loyalty Program</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#profile">Profile</a></li>
+      <li><a href="#redeem">Redeem Points</a></li>
+    </ul>
+  </nav>
+  
+  <section id="home">
+    <h1>Welcome to the Loyalty Program</h1>
+    <p>Manage your loyalty points and redeem rewards.</p>
+  </section>
+
+  <section id="profile">
+    <h2>Your Profile</h2>
+    <p>Name: John Doe</p>
+    <p>Loyalty Points: 1200</p>
+  </section>
+
+  <section id="redeem">
+    <h2>Redeem Your Points</h2>
+    <form id="redeem-form">
+      <label for="reward">Select a reward:</label>
+      <select id="reward" name="reward">
+        <option value="coffee-mug">Coffee Mug - 200 Points</option>
+        <option value="t-shirt">T-Shirt - 500 Points</option>
+        <option value="voucher">Gift Voucher - 1000 Points</option>
+      </select>
+      <button type="submit">Redeem</button>
+    </form>
+    <p id="redeem-result"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
