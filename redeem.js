@@ -99,14 +99,5 @@ document.addEventListener('DOMContentLoaded', async () => {
         undoButton.style.display = 'none'; // Hide undo button
       }
     });
-  
-    // Handle search functionality
-    searchInput.addEventListener('input', function () {
-      const query = this.value.toLowerCase();
-      const rewards = document.querySelectorAll('.reward');
-      rewards.forEach(reward => {
-        reward.style.display = reward.textContent.toLowerCase().includes(query) ? '' : 'none';
-      });
-    });
   });
   
