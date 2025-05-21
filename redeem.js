@@ -121,4 +121,27 @@ document.addEventListener('DOMContentLoaded', async () => {
           undoButton.style.display = 'none'; // Hide undo button
       }
   });
+
+  let userLevel = 1; // Add a variable to store user level
+
+// Function to update user level based on points
+function updateUserLevel(newPoints) {
+  const pointsToNextLevel = [100, 200, 300, 500]; // Array of points needed for each level
+  let levelUp = false;
+
+  while (newPoints >= pointsToNextLevel[userLevel - 1]) {
+    userLevel++;
+    levelUp = true;
+    newPoints -= pointsToNextLevel[userLevel - 2]; // Subtract points needed for the reached level
+  }
+
+  if (levelUp) {
+    alert(`Congratulations! You've leveled up to level ${userLevel}`); // Display level up message
+  }
+
+  return newPoints;
+}
+
+// Update points and level after successful redemption
+points = updateUserLevel(points);
 });
