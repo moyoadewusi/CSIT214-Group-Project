@@ -1,57 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Loyalty Program</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loyalty Program</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <nav aria-label="Main navigation">
-    <ul>
-      <li><a href="#home" role="button">Home</a></li>
-      <li><a href="#profile" role="button">Profile</a></li>
-      <li><a href="#redeem" role="button">Redeem Points</a></li>
-    </ul>
-  </nav>
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="#profile" role="button">Profile</a></li>
+            <li><a href="#redeem" role="button">Redeem Points</a></li>
+            <li><a href="#earn-points" role="button">Earn Points</a></li>
+        </ul>
+    </nav>
 
-  <section id="home" class="show">
-    <h1>Welcome to the Loyalty Program</h1>
-    <p>Manage your loyalty points and redeem rewards.</p>
-  </section>
+    <section id="login">
+        <h2>Login</h2>
+        <form id="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <button type="submit">Login</button>
+        </form>
+    </section>
 
-  <section id="profile">
-    <h2>Your Profile</h2>
-    <p id="user-name">Name: John Doe</p>
-    <p id="user-points">Loyalty Points: 1200</p>
-    <h3>Points History</h3>
-    <ul id="points-history-list">
-      <!-- History entries will be dynamically inserted here -->
-    </ul>
-  </section>
+    <section id="profile" class="show">
+        <h2>Your Profile</h2>
+        <p id="user-name">Name: John Doe</p>
+        <p id="user-points">Loyalty Points: 1200</p>
 
-  <section id="redeem">
-    <h2>Redeem Your Points</h2>
+        <button id="logout">Logout</button>
 
-    <form id="redeem-form">
-      <label for="reward">Select a reward:</label>
-      <select id="reward" name="reward">
-        <option value="coffee-mug">Coffee Mug - 200 Points</option>
-        <option value="t-shirt">T-Shirt - 500 Points</option>
-        <option value="voucher">Gift Voucher - 1000 Points</option>
-      </select>
-      <button type="submit">Redeem</button>
-    </form>
+        <h3>Points History</h3>
+        <ul id="points-history-list"></ul>
+    </section>
 
-    <p id="redeem-result"></p>
+    <section id="redeem">
+        <h2>Redeem Your Points</h2>
 
-    <button id="undo" style="display:none;">Undo Last Redemption</button>
-  </section>
+        <form id="redeem-form">
+            <label for="reward">Select a reward:</label>
+            <select id="reward" name="reward">
+                <option value="coffee-mug">Coffee Mug - 200 Points</option>
+                <option value="t-shirt">T-Shirt - 500 Points</option>
+                <option value="voucher">Gift Voucher - 1000 Points</option>
+            </select>
+            <button type="submit">Redeem</button>
+        </form>
 
-  <!-- Loading spinner -->
-  <div id="loading-spinner" class="spinner" style="display: none;"></div>
+        <p id="redeem-result"></p>
 
-  <script src="navigation.js"></script>
-  <script src="redeem.js"></script>
+        <button id="undo" style="display: none;">Undo Last Redemption</button>
+    </section>
+
+    <section id="earn-points">
+        <h2>Earn Points</h2>
+        <button id="earn-points-button">Earn 100 Points</button>
+    </section>
+
+    <div id="loading-spinner" class="spinner" style="display: none;"></div>
+
+    <script type="module" src="navigation.js"></script>
+    <script type="module" src="redeem.js"></script>
+    <script type="module" src="login.js"></script>
+    <script type="module" src="earn-points.js"></script>
 </body>
 </html>

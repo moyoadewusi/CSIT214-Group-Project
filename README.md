@@ -1,3 +1,5 @@
+# Loyalty Program
+
 login
 earn points
 redeem points
