@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loyalty Program</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Loyalty Program</h1>
+  </header>
+
+  <nav aria-label="Main navigation">
+    <ul>
+      <li><a href="#profile" role="button">Profile</a></li>
+      <li><a href="#redeem" role="button">Redeem Points</a></li>
+      <li><a href="#earn-points" role="button">Earn Points</a></li>
+    </ul>
+  </nav>
+
+    <section id="redeem">
+      <h2>Redeem Your Points</h2>
+
+      <form id="redeem-form">
+        <label for="reward">Select a reward:</label>
+        <select id="reward" name="reward">
+          <option value="coffee-mug">Coffee Mug - 200 Points</option>
+          <option value="t-shirt">T-Shirt - 500 Points</option>
+          <option value="voucher">Gift Voucher - 1000 Points</option>
+        </select>
+        <button type="submit">Redeem</button>
+      </form>
+
+      <p id="redeem-result"></p>
+
+      <button id="undo" style="display: none;">Undo Last Redemption</button>
+    </section>
+
+  <footer>
+    </footer>
+
+  <!-- <div id="loading-spinner" class="spinner" style="display: none;"></div> -->
+
+  <script type="module" src="navigation.js"></script>
+  <script type="module" src="redeem.js"></script>
+  <script type="module" src="login.js"></script>
+  <script type="module" src="earn-points.js"></script>
+</body>
+</html>
