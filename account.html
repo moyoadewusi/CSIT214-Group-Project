@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loyalty Program</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <header>
+        <div class="logo">
+          <a href="./index.html"><img src="./assets/image.png" alt="logo"></a>
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+          <span class="hamburger"></span>
+          <nav class="nav">
+              <ul class="nav__list">
+                  <li class="nav__item"><a href="./index.html" class="nav__link">Home</a></li>
+                  <li class="nav__item"><a href="./earn.html" class="nav__link">Earn Points</a></li>
+                  <li class="nav__item"><a href="./redeem.html" class="nav__link">Redeem Points</a></li>
+                  <li class="nav__item"><a href="./account.html" class="nav__link">My Account</a></li>
+              </ul>
+          </nav>
+        </header>
+
+    <nav aria-label="Main navigation">
+        <ul>
+        <li><a href="./index.html" role="button">Home Page</a></li>
+        <li><a href="./earn.html" role="button">Earn Points</a></li>
+        <li><a href="./redeem.html" role="button">Redeem Points</a></li>
+        <li><a href="./account.html" role="button">My Account</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section id="profile" class="show">
+        <h2>Your Profile</h2>
+        <p id="user-name">Name: John Doe</p>
+        <p id="user-level">Level: ${userLevel}</p>
+        <p id="user-points">Loyalty Points: 1200</p>
+
+        <button id="logout">Logout</button>
+
+        <h3>Points History</h3>
+        <ul id="points-history-list"></ul>
+        </section>
+
+    </main>
+
+    <footer>
+        </footer>
+
+    <!-- <div id="loading-spinner" class="spinner" style="display: none;"></div> -->
+
+    <script type="module" src="navigation.js"></script>
+    <script type="module" src="redeem.js"></script>
+    <script type="module" src="login.js"></script>
+    <script type="module" src="earn-points.js"></script>
+    </body>
+</html>
