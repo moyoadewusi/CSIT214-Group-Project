@@ -327,6 +327,7 @@ header {
   flex-direction: column;
   padding: 40px;
   border-bottom: 1px solid var(--clr-secondary);
+  background-color: var(--clr-primary);
 }
 
 .blog-heading {
@@ -401,6 +402,7 @@ header {
   font-size: 0.9rem;
   display: -webkit-box;
   -webkit-line-clamp: 3;
+  line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -521,8 +523,8 @@ form button:hover {
 /* Dark Mode Styles */
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: #1c1c1c;
-    color: #e0e0e0;
+    background-color: var(--clr-secondary);
+    /* color: #e0e0e0; */
   }
 
   nav {

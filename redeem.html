@@ -1,25 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Loyalty Program</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Loyalty Program</h1>
-  </header>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlyDreamAir</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" /> 
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+          <a href="./index.html"><img src="./assets/logo.png" alt="logo"></a>
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+          <span class="hamburger"></span>
+          <nav class="nav">
+              <ul class="nav__list">
+                  <li class="nav__item"><a href="./index.html" class="nav__link">Home</a></li>
+                  <li class="nav__item"><a href="./earn.html" class="nav__link">Earn Points</a></li>
+                  <li class="nav__item"><a href="./redeem.html" class="nav__link">Redeem Points</a></li>
+                  <li class="nav__item"><a href="./account.html" class="nav__link">My Account</a></li>
+              </ul>
+          </nav>
+    </header>
 
-  <nav aria-label="Main navigation">
-    <ul>
-      <li><a href="#profile" role="button">Profile</a></li>
-      <li><a href="#redeem" role="button">Redeem Points</a></li>
-      <li><a href="#earn-points" role="button">Earn Points</a></li>
-    </ul>
-  </nav>
 
-    <section id="tiers"></section>
+    <!-- Redeem Points -->
+
+    <!-- <section id="tiers"></section> -->
 
     <section id="redeem">
       <h2>Redeem Your Points</h2>
@@ -38,15 +47,27 @@
 
       <button id="undo" style="display: none;">Undo Last Redemption</button>
     </section>
+        
 
-  <footer>
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+      <a href="" class="footer__link">Privacy policy |</a>
+      <a href="" class="footer__link">Cookie policy |</a>
+      <a href="" class="footer__link">Terms & conditions |</a>
+      <a href="" class="footer__link">Keeping your data safe |</a>
+      <a href="" class="footer__link">Feedback</a>
+      <ul class="social-list">
+          <li class="social-list__item"><a class="social-list__link" href="https://twitter.com"><img src="./assets/iconmonstr-twitter-1-240.png"></a></li>
+          <li class="social-list__item"><a class="social-list__link" href="https://github.com"><img src="./assets/iconmonstr-github-1-240.png"></a></li>
+          <li class="social-list__item"><a class="social-list__link" href="https://www.linkedin.com"><img src="./assets/iconmonstr-linkedin-1-240.png"></a></li>
+      </ul>
     </footer>
 
-  <!-- <div id="loading-spinner" class="spinner" style="display: none;"></div> -->
-
-  <script type="module" src="navigation.js"></script>
-  <script type="module" src="redeem.js"></script>
-  <script type="module" src="login.js"></script>
-  <script type="module" src="earn-points.js"></script>
-</body>
+    <!-- <script type="module" src="navigation.js"></script> -->
+    <script type="module" src="redeem.js"></script>
+    <!-- <script type="module" src="login.js"></script> -->
+    <!-- <script type="module" src="earn-points.js"></script> -->
+    <script src="./js/index.js"></script>
+    
+  </body>
 </html>

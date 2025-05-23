@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loyalty Program</title>
+    <title>FlyDreamAir</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" /> 
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-
-        <header>
-        <div class="logo">
-          <a href="./index.html"><img src="./assets/image.png" alt="logo"></a>
-        </div>
-        <button class="nav-toggle" aria-label="toggle navigation">
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+          <a href="./index.html"><img src="./assets/logo.png" alt="logo"></a>
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
           <span class="hamburger"></span>
           <nav class="nav">
               <ul class="nav__list">
@@ -22,21 +23,12 @@
                   <li class="nav__item"><a href="./account.html" class="nav__link">My Account</a></li>
               </ul>
           </nav>
-        </header>
+    </header>
 
-    <nav aria-label="Main navigation">
-        <ul>
-        <li><a href="./index.html" role="button">Home Page</a></li>
-        <li><a href="./earn.html" role="button">Earn Points</a></li>
-        <li><a href="./redeem.html" role="button">Redeem Points</a></li>
-        <li><a href="./account.html" role="button">My Account</a></li>
-        </ul>
-    </nav>
 
-    <main>
-
-        <section id="profile" class="show">
-        <h2>Your Profile</h2>
+    <!-- Account -->
+    <section class="account" id="profile">
+        <h2 class="section__title section__title--services">Hi Username</h2>
         <p id="user-name">Name: John Doe</p>
         <p id="user-level">Level: ${userLevel}</p>
         <p id="user-points">Loyalty Points: 1200</p>
@@ -45,18 +37,28 @@
 
         <h3>Points History</h3>
         <ul id="points-history-list"></ul>
-        </section>
+    </section>
+        
 
-    </main>
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+      <a href="" class="footer__link">Privacy policy |</a>
+      <a href="" class="footer__link">Cookie policy |</a>
+      <a href="" class="footer__link">Terms & conditions |</a>
+      <a href="" class="footer__link">Keeping your data safe |</a>
+      <a href="" class="footer__link">Feedback</a>
+      <ul class="social-list">
+          <li class="social-list__item"><a class="social-list__link" href="https://twitter.com"><img src="./assets/iconmonstr-twitter-1-240.png"></a></li>
+          <li class="social-list__item"><a class="social-list__link" href="https://github.com"><img src="./assets/iconmonstr-github-1-240.png"></a></li>
+          <li class="social-list__item"><a class="social-list__link" href="https://www.linkedin.com"><img src="./assets/iconmonstr-linkedin-1-240.png"></a></li>
+      </ul>
+    </footer>
 
-    <footer>
-        </footer>
-
-    <!-- <div id="loading-spinner" class="spinner" style="display: none;"></div> -->
-
-    <script type="module" src="navigation.js"></script>
+    <!-- <script type="module" src="navigation.js"></script> -->
     <script type="module" src="redeem.js"></script>
-    <script type="module" src="login.js"></script>
-    <script type="module" src="earn-points.js"></script>
-    </body>
+    <!-- <script type="module" src="login.js"></script> -->
+    <!-- <script type="module" src="earn-points.js"></script>  -->
+    <script src="./js/index.js"></script>
+    
+  </body>
 </html>
