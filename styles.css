@@ -601,6 +601,16 @@ form button:hover {
 }
 
 
+/* Earn Page */
+.earn-points {
+  background-color: var(--clr-secondary);
+  background-image: url(./assets/group-9.png);
+  background-size: cover;
+  background-blend-mode: multiply;
+  color: var(--clr-primary);
+}
+
+
 /* Footer */
 
 .footer {
