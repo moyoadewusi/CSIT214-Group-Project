@@ -101,6 +101,9 @@ img {
     background-color: var(--clr-accent2);
 }
 
+/* #upgrade-tier-btn {
+  display: block;
+} */
 
 
 /* Typography */
@@ -264,7 +267,7 @@ header {
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-  background: var(--clr-accent);
+  background: var(--clr-accent2);
   width: 2em;
   height: 3px;
   border-radius: 1em;
@@ -431,6 +434,10 @@ header {
   margin-right: auto;
 }
 
+.blog a {
+  color: var(--clr-primary);
+}
+
 
 /* Forms */
 
@@ -524,11 +531,11 @@ form button:hover {
 @media (prefers-color-scheme: dark) {
   body {
     background-color: var(--clr-secondary);
-    /* color: #e0e0e0; */
+    color: #e0e0e0;
   }
 
   nav {
-    background-color: #444;
+    background-color: transparent;
   }
 
   nav ul li a {
@@ -545,6 +552,15 @@ form button:hover {
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
   }
 
+  .blog {
+    background-color: var(--clr-secondary);
+  }
+
+  footer {
+    background: var(--clr-secondary);
+
+  }
+
   form select, input[type="text"] {
     background-color: #555;
     color: #e0e0e0;
@@ -557,6 +573,12 @@ form button:hover {
 
   form button:hover {
     background-color: #777;
+  }
+
+  .intro {
+    background-color: var(--clr-secondary);
+    background-size: cover;
+    background-blend-mode: multiply;
   }
 
   #undo {
@@ -605,6 +627,16 @@ form button:hover {
 .earn-points {
   background-color: var(--clr-secondary);
   background-image: url(./assets/group-9.png);
+  background-size: cover;
+  background-blend-mode: multiply;
+  color: var(--clr-primary);
+}
+
+
+/* Redeem Page */
+.redeem-points {
+  background-color: var(--clr-secondary);
+  background-image: url(./assets/paradise-598201-640-1.png);
   background-size: cover;
   background-blend-mode: multiply;
   color: var(--clr-primary);
