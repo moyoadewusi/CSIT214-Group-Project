@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FlyDreamAir</title>
+    <title>WeFly</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" /> 
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
@@ -32,9 +32,12 @@
           <strong>Redeem Points</strong>
       </h1>
       <p class="section__subtitle section__subtitle--redeem">
-        Explore FDA Rewards and use your FDA Points
+        Explore WeFly Rewards and use your WeFly Points
       </p>
   </section>
+
+  <section class="history-tracking"><h4 id="user-balance"><span id="user-points"></span> pts</h4>
+    <ul id="points-history-list"></ul></section>
 
   <!-- Loyalty Tiers Section -->
   <section class="blog blog-redeem" id="blog-loyalty_tiers">
@@ -60,7 +63,7 @@
           <ul>
           <li>Free Checked Bag</li>                    
           <li>Priority Boarding</li>
-          <li>Bonus FDA Reward Points</li>
+          <li>Bonus WeFly Reward Points</li>
           </ul>
           <a href="" class="btn btn-redeem">More</a>
           <span>2500 PTS</span>
@@ -102,7 +105,7 @@
           <ul>
           <li>All Silver Benefits</li>                    
           <li>Free Flight Ticket</li>
-          <li>Bonus FDA Reward Points</li>
+          <li>Bonus WeFly Reward Points</li>
           </ul>
           <a href="" class="btn btn-redeem">More</a>
           <span>10000 PTS</span>
@@ -139,73 +142,55 @@
 </section>
 
   <!-- Redeem Flights Section -->
-  <section class="blog blog-redeem" id="blog-loyalty_tiers">
-
-    <!-- heading -->
-    <div class="blog-heading blog-heading--redeem">
+<section class="blog blog-redeem" id="blog-redeem-flights">
+  <div class="blog-heading blog-heading--redeem">
       <h3>Flights</h3>
-      <p>Use FDA Points to book a seat for your next trip.</p> 
+      <p>Redeem points to book a seat for your next trip.</p> 
+  </div>
+
+  <div class="blog-container">
+      <!-- Sydney to Hanoi Flight -->
+      <div class="blog-box blog-box--redeem">
+          <div class="blog-img blog-img--redeem">
+              <img src="./assets/find-the-perfect-new-employee-welcome-to-the-team-images-1.png" alt="Sydney to Hanoi">
+          </div>
+          <div class="blog-text blog-text--redeem">
+              <a href="#" class="blog-title blog-title--redeem">Sydney to Hanoi</a>
+              <p>Economy one-way</p>
+              <span>15,000 PTS</span>
+              <a href="#" id="redeem-sydney-hanoi" class="btn btn-redeem">Redeem Points</a>
+          </div>
+      </div>
+
+      <!-- Paris to Rome Flight -->
+      <div class="blog-box blog-box--redeem">
+          <div class="blog-img blog-img--redeem">
+              <img src="./assets/find-the-perfect-new-employee-welcome-to-the-team-images-1.png" alt="Paris to Rome">
+          </div>
+          <div class="blog-text blog-text--redeem">
+              <a href="#" class="blog-title blog-title--redeem">Paris to Rome</a>
+              <p>Economy one-way</p>
+              <span>20,000 PTS</span>
+              <a href="#" id="redeem-paris-rome" class="btn btn-redeem">Redeem Points</a>
+          </div>
+      </div>
+
+      <!-- Beijing to Tokyo Flight -->
+      <div class="blog-box blog-box--redeem">
+        <div class="blog-img blog-img--redeem">
+            <img src="./assets/find-the-perfect-new-employee-welcome-to-the-team-images-1.png" alt="Sydney to Hanoi">
+        </div>
+        <div class="blog-text blog-text--redeem">
+            <a href="#" class="blog-title blog-title--redeem">Beijing to Tokyo</a>
+            <p>Economy one-way</p>
+            <span>12,000 PTS</span>
+            <a href="#" id="redeem-beijing-tokyo" class="btn btn-redeem">Redeem Points</a>
+        </div>
     </div>
 
-    <!-- blog container -->
-    <div class="blog-container">
-
-      <!-- box 1 -->
-      <div class="blog-box blog-box--redeem">
-        <div class="blog-img blog-img--redeem">
-          <img src="./assets/find-the-perfect-new-employee-welcome-to-the-team-images-1.png" alt="Blog image">
-        </div>
-
-        <!-- text -->
-        <div class="blog-text blog-text--redeem">
-          <a href="" class="blog-title blog-title--redeem">Sydney to Hanoi</a>
-          <p>Economy one-way</p>
-          <span>15000 PTS</span>
-
-        </div>
-
-      </div>
-
-      <!-- box 2 -->
-      <div class="blog-box blog-box--redeem">
-        <div class="blog-img blog-img--redeem">
-          <img src="./assets/find-the-perfect-new-employee-welcome-to-the-team-images-1.png" alt="Blog image">
-        </div>
-
-        <!-- text -->
-        <div class="blog-text blog-text--redeem">
-          <a href="" class="blog-title blog-title--redeem">Paris to Rome</a>
-          <p>Economy one-way</p>
-          <span>20000 PTS</span>
-
-        </div>
-
-      </div>
-
-      <!-- box 3 -->
-      <div class="blog-box blog-box--redeem">
-        <div class="blog-img blog-img--redeem">
-          <img src="./assets/find-the-perfect-new-employee-welcome-to-the-team-images-1.png" alt="Blog image">
-        </div>
-
-        <!-- text -->
-        <div class="blog-text blog-text--redeem">
-          <a href="" class="blog-title blog-title--redeem">Beijing to Tokyo</a>
-          <p>Economy one-way</p>
-          <span>12000 PTS</span>
-
-        </div>
-
-      </div>
-        
-      <a href="./earn.html" class="btn btn-redeem" id="upgrade-tier-btn">Seat Selection</a>  
-      <a href="./earn.html" class="btn btn-redeem" id="upgrade-tier-btn">Extra Baggage</a>  
-      <a href="./earn.html" class="btn btn-redeem" id="upgrade-tier-btn">In-Flight Meal</a>  
-      <a href="./earn.html" class="btn btn-redeem" id="upgrade-tier-btn">Priority Queue</a>  
-
-    </div>
-
+  </div>
 </section>
+
 
   <!-- Hotel & Travel Section -->
   <section class="blog blog-redeem" id="blog-loyalty_tiers">

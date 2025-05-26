@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FlyDreamAir</title>
+    <title>WeFly</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" /> 
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
@@ -31,9 +31,12 @@
             <strong>Earn Points</strong>
         </h1>
         <p class="section__subtitle section__subtitle--earn">
-          Million ways to earn more FDA Reward Points
+          Million ways to earn more WeFly Reward Points
         </p>
     </section>
+
+    <section class="history-tracking"><h4 id="user-balance"><span id="user-points"></span> pts</h4>
+      <ul id="points-history-list"></ul></section>
 
     <!-- Cards & Banking Section -->
     <section class="blog blog-earn" id="blog-cards&banking">
@@ -91,81 +94,52 @@
   </section>
 
    <!-- Flights Section -->
-   <section class="blog blog-earn" id="blog-flights">
-
-    <!-- heading -->
-    <div class="blog-heading blog-heading--earn">
+<section class="blog blog-earn" id="blog-flights">
+  <div class="blog-heading blog-heading--earn">
       <h3>Flights</h3>
-      <p>Earning Points from purchasing our flight tickets</p> 
-      <a href="" class="btn btn-earn">$1 = 3 PTS</a>
-    </div>
+      <p>Earn points by purchasing flight tickets.</p> 
+  </div>
 
-    <!-- blog container -->
-    <div class="blog-container">
-
-      <!-- box 1 -->
+  <div class="blog-container">
+      <!-- Economy Flight -->
       <div class="blog-box blog-box--earn">
-        <div class="blog-img blog-img--earn">
-          <img src="./assets/find-the-perfect-new-employee-welcome-to-the-team-images-1.png" alt="Blog image">
-        </div>
-
-        <!-- text -->
-        <div class="blog-text blog-text--earn">
-          <span>From $100</span>
-          <a href="" class="blog-title blog-title--earn">Economy</a>
-          <a>Basic seating with minimal amenities.</a>                 
-        </div>
-
+          <div class="blog-img blog-img--earn">
+              <img src="./assets/find-the-perfect-new-employee-welcome-to-the-team-images-1.png" alt="Economy">
+          </div>
+          <div class="blog-text blog-text--earn">
+              <span>From $100</span>
+              <a href="#" class="blog-title blog-title--earn">Economy</a>
+              <p>Basic seating with minimal amenities.</p>
+              <a href="#" id="earn-economy" class="btn btn-earn">Earn 300 Points</a>
+          </div>
       </div>
 
-      <!-- box 2 -->
+      <!-- Premium Economy Flight -->
       <div class="blog-box blog-box--earn">
-        <div class="blog-img blog-img--earn">
-          <img src="./assets/find-the-perfect-new-employee-welcome-to-the-team-images-1.png" alt="Blog image">
-        </div>
-
-        <!-- text -->
-        <div class="blog-text blog-text--earn">
-          <span>From $150</span>
-          <a href="" class="blog-title blog-title--earn">Premuim Economy</a>
-          <a>More legroom and better recline.</a>                 
-        </div>
-
+          <div class="blog-img blog-img--earn">
+              <img src="./assets/find-the-perfect-new-employee-welcome-to-the-team-images-1.png" alt="Premium Economy">
+          </div>
+          <div class="blog-text blog-text--earn">
+              <span>From $150</span>
+              <a href="#" class="blog-title blog-title--earn">Premium Economy</a>
+              <p>More legroom and better recline.</p>
+              <a href="#" id="earn-premium-economy" class="btn btn-earn">Earn 500 Points</a>
+          </div>
       </div>
 
-      <!-- box 3 -->
+      <!-- Business Class Flight -->
       <div class="blog-box blog-box--earn">
-        <div class="blog-img blog-img--earn">
-          <img src="./assets/find-the-perfect-new-employee-welcome-to-the-team-images-1.png" alt="Blog image">
-        </div>
-
-        <!-- text -->
-        <div class="blog-text blog-text--earn">
-          <span>From $250</span>
-          <a href="" class="blog-title blog-title--earn">Business Class</a>
-          <a>Spacious seats and premium services.</a>                 
-        </div>
-
+          <div class="blog-img blog-img--earn">
+              <img src="./assets/find-the-perfect-new-employee-welcome-to-the-team-images-1.png" alt="Business Class">
+          </div>
+          <div class="blog-text blog-text--earn">
+              <span>From $250</span>
+              <a href="#" class="blog-title blog-title--earn">Business Class</a>
+              <p>Spacious seats and premium services.</p>
+              <a href="#" id="earn-business" class="btn btn-earn">Earn 800 Points</a>
+          </div>
       </div>
-
-      <!-- box 4 -->
-      <div class="blog-box blog-box--earn">
-        <div class="blog-img blog-img--earn">
-          <img src="./assets/find-the-perfect-new-employee-welcome-to-the-team-images-1.png" alt="Blog image">
-        </div>
-
-        <!-- text -->
-        <div class="blog-text blog-text--earn">
-          <span>From $500</span>
-          <a href="" class="blog-title blog-title--earn">First Class</a>
-          <a>Luxurious seating with exclusive perks.</a>                 
-        </div>
-
-      </div>
-        
-        
-    </div>
-
+  </div>
 </section>
 
   <!-- Hotel & Travel Section -->
@@ -242,6 +216,7 @@
           <li class="social-list__item"><a class="social-list__link" href="https://www.linkedin.com"><img src="./assets/iconmonstr-linkedin-1-240.png"></a></li>
       </ul>
     </footer>
+
 
     <!-- <script type="module" src="navigation.js"></script> -->
     <!-- <script type="module" src="redeem.js"></script> -->

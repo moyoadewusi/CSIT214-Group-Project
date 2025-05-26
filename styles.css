@@ -101,6 +101,10 @@ img {
     background-color: var(--clr-accent2);
 }
 
+#delete-account {
+  background-color: var(--clr-accent2);
+}
+
 /* #upgrade-tier-btn {
   display: block;
 } */
@@ -523,17 +527,24 @@ form button:hover {
 
 /* Points History Log Styles within Profile */
 #points-history-list {
-  list-style-type: none;
-  padding: 0;
-  margin-top: 20px;
+  max-height: 200px; /* Adjust height as needed */
+  overflow-y: auto;  /* Enable vertical scrolling */
+  border: 1px solid #ccc; /* Optional: Add a border for clarity */
+  padding: 10px;
+  background-color: #f9f9f9; /* Optional: Background color */
 }
 
 #points-history-list li {
-  padding: 10px;
-  margin-bottom: 5px;
-  background-color: #f9f9f9;
-  border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px; /* Spacing between items */
+  padding: 5px;
+  list-style-type: none; /* Optional: Remove bullet points */
+  background-color: #fff; /* Optional: Set a background color */
+  border-radius: 4px; /* Optional: Rounded corners */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Optional: Shadow for better visuals */
+}
+
+.history-tracking {
+  display: none;
 }
 
 /* Dark Mode Styles */
@@ -621,15 +632,6 @@ form button:hover {
   }
 } */
 
-#logout {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #ff0000;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
 
 
 /* Earn Page */

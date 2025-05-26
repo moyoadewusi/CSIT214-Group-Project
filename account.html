@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FlyDreamAir</title>
+    <title>WeFly</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" /> 
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
@@ -31,16 +31,23 @@
         <h2 class="section__title section__title--services" id="user-name">Hi Username,</h2>
         <!-- <p id="user-name">Username: JohnDoe183</p> -->
         <h3 id="user-tier">Tier (Bronze/Silver/Gold/Platnum)</h3>
-        <h4 id="user-balance">Current Balance: 5,183 pts</h4>
+        <!-- Points Balance Section on Account Page -->
+        <h4 id="user-balance">Current Balance: <span id="user-points"></span> pts</h4>
+
         <h4 id="user-lifetime-balance">Lifetime Earning: 50,378 pts</h4>
 
         
 
         <h3>Points History</h3>
-        <ul id="points-history-list"></ul>
+
+        <ul id="points-history-list">
+            <!-- <li>Sample History Item: +100 points</li> -->
+        </ul>
+
+
         <a href="" class="btn btn-account">View Activity Statement</a>
         <a href="" class="btn btn-account">Settings</a>
-        <button id="logout">Delete Account</button>
+        <button id="delete-account" class="btn">Delete Account</button>
     </section>
         
 
@@ -58,8 +65,9 @@
       </ul>
     </footer>
 
+    <script type="module" src="./js/account.js"></script>
     <!-- <script type="module" src="navigation.js"></script> -->
-    <script type="module" src="./js/redeem.js"></script>
+    <!-- <script type="module" src="./js/redeem.js"></script> -->
     <!-- <script type="module" src="login.js"></script> -->
     <!-- <script type="module" src="earn-points.js"></script>  -->
     <script src="./js/index.js"></script>
