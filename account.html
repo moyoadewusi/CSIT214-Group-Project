@@ -28,15 +28,19 @@
 
     <!-- Account -->
     <section class="account" id="profile">
-        <h2 class="section__title section__title--services">Hi Username</h2>
-        <p id="user-name">Name: John Doe</p>
-        <p id="user-level">Level: ${userLevel}</p>
-        <p id="user-points">Loyalty Points: 1200</p>
+        <h2 class="section__title section__title--services" id="user-name">Hi Username,</h2>
+        <!-- <p id="user-name">Username: JohnDoe183</p> -->
+        <h3 id="user-tier">Tier (Bronze/Silver/Gold/Platnum)</h3>
+        <h4 id="user-balance">Current Balance: 5,183 pts</h4>
+        <h4 id="user-lifetime-balance">Lifetime Earning: 50,378 pts</h4>
 
-        <button id="logout">Logout</button>
+        
 
         <h3>Points History</h3>
         <ul id="points-history-list"></ul>
+        <a href="" class="btn btn-account">View Activity Statement</a>
+        <a href="" class="btn btn-account">Settings</a>
+        <button id="logout">Delete Account</button>
     </section>
         
 
@@ -55,7 +59,7 @@
     </footer>
 
     <!-- <script type="module" src="navigation.js"></script> -->
-    <script type="module" src="redeem.js"></script>
+    <script type="module" src="./js/redeem.js"></script>
     <!-- <script type="module" src="login.js"></script> -->
     <!-- <script type="module" src="earn-points.js"></script>  -->
     <script src="./js/index.js"></script>
