@@ -705,3 +705,47 @@ form button:hover {
 .social-list__link {
   padding: .5em;
 }
+
+
+/* Seat Selection */
+#seat-selection-section {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.flight-option {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.flight-option img {
+  max-width: 150px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.flight-info {
+  flex-grow: 1;
+  padding: 0 20px;
+}
+
+.select-flight-btn {
+  background-color: #003399;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.select-flight-btn:hover {
+  background-color: #001f66;
+}

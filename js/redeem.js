@@ -57,3 +57,15 @@ document.addEventListener('DOMContentLoaded', () => {
     // Display the current points balance on page load
     pointsElement.textContent = `Loyalty Points: ${points}`;
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const seatSelectionSection = document.getElementById('seat-selection-section');
+
+    document.querySelectorAll('.select-flight-btn').forEach(button => {
+        button.addEventListener('click', () => {
+            // Display the seat selection section when the button is clicked
+            seatSelectionSection.style.display = 'block';
+            seatSelectionSection.scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+});
