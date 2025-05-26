@@ -58,14 +58,32 @@ document.addEventListener('DOMContentLoaded', () => {
     pointsElement.textContent = `Loyalty Points: ${points}`;
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-    const seatSelectionSection = document.getElementById('seat-selection-section');
+// Flight & Seat Selection 
 
-    document.querySelectorAll('.select-flight-btn').forEach(button => {
+document.addEventListener('DOMContentLoaded', () => {
+    const seatSelectionButton = document.getElementById('seat-selection-btn');
+    const seatSelectionSection = document.getElementById('flight-selection-section');
+
+    seatSelectionButton.addEventListener('click', () => {
+        // Display the seat selection section
+        seatSelectionSection.style.display = 'block';
+        seatSelectionSection.scrollIntoView({ behavior: 'smooth' });
+    });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const selectFlightButtons = document.querySelectorAll('.select-flight-btn');
+    const seatSelectionPage = document.getElementById('seat-selection-page');
+    const flightSelectionSection = document.getElementById('flight-selection-section');
+
+    selectFlightButtons.forEach(button => {
         button.addEventListener('click', () => {
-            // Display the seat selection section when the button is clicked
-            seatSelectionSection.style.display = 'block';
-            seatSelectionSection.scrollIntoView({ behavior: 'smooth' });
+            // Hide the flight selection section
+            flightSelectionSection.style.display = 'none';
+
+            // Show the seat selection section
+            seatSelectionPage.style.display = 'block';
+            seatSelectionPage.scrollIntoView({ behavior: 'smooth' });
         });
     });
 });

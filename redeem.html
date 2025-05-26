@@ -188,15 +188,15 @@
         </div>
     </div>
 
-    <a href="./earn.html" class="btn btn-redeem" id="upgrade-tier-btn">Seat Selection</a>  
+    <button class="btn btn-redeem" id="seat-selection-btn">Seat Selection</button>  
     <a href="./earn.html" class="btn btn-redeem" id="upgrade-tier-btn">Extra Baggage</a>  
     <a href="./earn.html" class="btn btn-redeem" id="upgrade-tier-btn">In-Flight Meal</a>  
     <a href="./earn.html" class="btn btn-redeem" id="upgrade-tier-btn">Priority Queue</a>  
     
   </div>
 
-  <!-- Seat Selection -->
-  <div id="seat-selection-section" style="display: none;">
+  <!-- Flight Selection -->
+  <div id="flight-selection-section" style="display: none;">
     <h2>Seat Selection</h2>
     <p>Please select your flight</p>
 
@@ -224,6 +224,51 @@
         <button class="select-flight-btn">Select this flight</button>
     </div>
   </div>
+
+  <!-- Seat Selection -->
+
+  <div id="seat-selection-page" style="display: none;">
+    <h2>Seat Selection</h2>
+    <p>Please select your seat</p>
+
+    <div class="seat-selection-container">
+        <div class="seat-map">
+            <img src="seat-map.png" alt="Seat Map"> <!-- Seat map illustration -->
+            <button class="confirm-seat-btn">Confirm</button>
+        </div>
+
+        <div class="seat-info">
+            <div class="flight-details">
+                <h3>SYD <span>&rarr;</span> HAN</h3>
+                <p>Feb 25 | 7:00 AM Departing</p>
+                <p>Mar 21 | 12:15 PM Arriving</p>
+            </div>
+
+            <div class="class-selection">
+                <div class="class-option selected">
+                    <h4>Economy</h4>
+                    <p>Extended legroom, personalized service, and a multi-course meal service.</p>
+                </div>
+
+                <div class="class-option">
+                    <h4>Business Class</h4>
+                    <p>Extended legroom, personalized service, first two checked bags free, and priority boarding.</p>
+                </div>
+            </div>
+
+            <div class="passenger-info">
+                <p><strong>Passenger 1:</strong> User Name</p>
+                <p><strong>Points Used:</strong> --</p>
+            </div>
+
+            <div class="actions">
+                <button class="save-close-btn">Save and Close</button>
+                <button class="next-flight-btn">Next Flight</button>
+            </div>
+        </div>
+    </div>
+  </div>
+
 
 
 

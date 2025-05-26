@@ -707,34 +707,34 @@ form button:hover {
 }
 
 
-/* Seat Selection */
-#seat-selection-section {
+/* Flight Seat Selection */
+#flight-selection-section {
   margin-top: 20px;
   padding: 20px;
-  border: 1px solid #ddd;
   border-radius: 10px;
   background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .flight-option {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 15px;
   margin-bottom: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid #ddd;
   border-radius: 10px;
-  background-color: #fff;
+  background-color: white;
 }
 
 .flight-option img {
-  max-width: 150px;
-  height: auto;
+  max-width: 120px;
   border-radius: 10px;
 }
 
 .flight-info {
   flex-grow: 1;
-  padding: 0 20px;
+  margin-left: 20px;
 }
 
 .select-flight-btn {
@@ -747,5 +747,86 @@ form button:hover {
 }
 
 .select-flight-btn:hover {
+  background-color: #001f66;
+}
+
+/* Seat Selection page */
+
+#seat-selection-page {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.seat-selection-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.seat-map {
+  width: 40%;
+  text-align: center;
+}
+
+.seat-map img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.confirm-seat-btn {
+  background-color: #003399;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.seat-info {
+  width: 55%;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.flight-details h3 {
+  font-size: 1.5rem;
+}
+
+.class-selection {
+  margin-top: 20px;
+}
+
+.class-option {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background-color: #f0f0f0;
+}
+
+.class-option.selected {
+  border-color: #003399;
+  background-color: #e6f0ff;
+}
+
+.actions {
+  margin-top: 20px;
+}
+
+.actions button {
+  background-color: #003399;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.actions button:hover {
   background-color: #001f66;
 }
