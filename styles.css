@@ -434,9 +434,18 @@ header {
   margin-right: auto;
 }
 
-.blog a {
+/* .blog a {
+  color: var(--clr-secondary);
+} */
+
+/* .btn-earn a {
   color: var(--clr-primary);
-}
+} */
+
+/* .btn-redeem {
+  color: var(--clr-primary);
+} */
+
 
 
 /* Forms */
