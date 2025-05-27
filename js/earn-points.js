@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
     // Handle earning points for First
-    document.getElementById('earn-business').addEventListener('click', (e) => {
+    document.getElementById('earn-first').addEventListener('click', (e) => {
       e.preventDefault();
       const pointsEarned = 1200;
       points += pointsEarned;

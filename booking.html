@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Booking Page</title>
+</head>
+<body class="booking-page-body">
+    <section class="booking-page">
+        <h1>Review Booking</h1>
+        <div class="booking-details">
+            <p>Beach House Studio</p>
+            <p>$2,770 / night</p>
+            <p>4 nights</p>
+            <p>Subtotal: $10,080</p>
+            <p>WeFly Discount: -$2,770</p>
+            <p>Taxes: $1,512</p>
+            <p>Total: $9,818</p>
+        </div>
+        <button id="proceed-payment-btn">Proceed to Payment</button>
+    </section>
+
+    <!-- Confirmation Modal -->
+    <div id="confirmation-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <h2>Confirm Booking</h2>
+            <p>Are you sure you want to proceed?</p>
+            <div class="modal-actions">
+                <button id="cancel-btn" class="modal-btn">No, Cancel</button>
+                <button id="confirm-btn" class="modal-btn">Yes, Confirm</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/booking.js"></script>
+</body>
+</html>
