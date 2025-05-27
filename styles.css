@@ -888,3 +888,7 @@ form button:hover {
   font-size: 1.5rem;
 }
 
+.account {
+  background-image: url(./assets/background.png);
+  background-size: cover;
+}
