@@ -13,11 +13,11 @@ A responsive web application that simulates a loyalty program where users can lo
 
 ## How It Works
 
-1. **Login**: The user logs in using a simple form (no backend).
-2. **Navigation**: The navbar updates to reflect login state and allows switching between sections.
-3. **Points**: Users start with preset points and can redeem for items like Coffee Mugs or Gift Vouchers.
-4. **Undo**: Recently redeemed items can be undone to refund points.
-5. **History**: All redemptions and undo actions are recorded in localStorage.
+1. **Account**: The user can "delete account" which will reset actions recorded in localStorage.
+2. **Navigation**: The navbar allows switching between sections.
+3. **Points**: Users earn points and can redeem for flights and hotel reservations.
+4. **History**: All earing and redemptions actions are recorded in localStorage.
+5. **Levels**: As points are earned, so does the account level/tier (Bronze/Silver/Gold/Platnum). With a higher level new options are available for redemtion. (work in progress)
 
 ## Technologies Used
 
