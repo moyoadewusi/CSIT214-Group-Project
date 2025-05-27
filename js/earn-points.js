@@ -42,7 +42,17 @@ document.addEventListener('DOMContentLoaded', () => {
       points += pointsEarned;
       localStorage.setItem('points', points);
       pointsElement.textContent = `Loyalty Points: ${points}`;
-      logPointsHistory('Earned from Business Flight', pointsEarned);
+      logPointsHistory('Earned from Business Class Flight', pointsEarned);
+  });
+
+    // Handle earning points for First
+    document.getElementById('earn-business').addEventListener('click', (e) => {
+      e.preventDefault();
+      const pointsEarned = 1200;
+      points += pointsEarned;
+      localStorage.setItem('points', points);
+      pointsElement.textContent = `Loyalty Points: ${points}`;
+      logPointsHistory('Earned from First Class Flight', pointsEarned);
   });
 
   // Load existing points history from localStorage on page load

@@ -439,6 +439,10 @@ header {
   margin-right: auto;
 }
 
+#price-value {
+  display: inline-block;
+}
+
 /* .blog-tier img {
   color: #000;
 } */
