@@ -368,6 +368,7 @@ header {
   border: 1px solid #ececec;
   margin: 20px;
   box-shadow: var(--bs);
+  border-radius: 30px;
 }
 
 .blog-img {
@@ -437,6 +438,10 @@ header {
   margin-left: auto;
   margin-right: auto;
 }
+
+/* .blog-tier img {
+  color: #000;
+} */
 
 /* .blog a {
   color: var(--clr-secondary);
