@@ -19,6 +19,7 @@
     --clr-secondary: #303030;
     --clr-accent: #000040;
     --clr-accent2: #e01639;
+    --clr-accent3: #007bff;
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -101,16 +102,15 @@ img {
     background-color: var(--clr-accent2);
 }
 
+.btn-redeem, .btn-earn {
+  margin: 20px;
+}
+
 #delete-account {
   background-color: var(--clr-accent2);
 }
 
-/* #upgrade-tier-btn {
-  display: block;
-} */
 
-
-/* Typography */
 
 h1,
 h2,
@@ -160,7 +160,7 @@ header {
 }
 
 .logo img {
-  max-width: 100px;
+  max-width: 125px;
 }
 
 .current-page {
@@ -169,7 +169,7 @@ header {
 
 .nav__list {
   list-style: none;
-  margin: 0;
+  margin: 1.25rem;
 }
 
 .nav__link {
@@ -291,30 +291,6 @@ header {
 .hamburger::after { bottom: 6px; }
 
 
-/* Sections */
-
-/* section {
-  padding: 20px;
-  margin: 20px;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  position: absolute;
-  top: 60px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 90%;
-  max-width: 600px;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease;
-} */
-
-/* section.show {
-  opacity: 1;
-  pointer-events: all;
-} */
-
 
 
 /* Intro section */
@@ -365,7 +341,7 @@ header {
 .blog-box {
   width: 350px;
   background-color: var(--clr-primary);
-  border: 1px solid #ececec;
+  border: 1px solid var(--clr-primary);
   margin: 20px;
   box-shadow: var(--bs);
   border-radius: 30px;
@@ -374,6 +350,10 @@ header {
 .blog-img {
   width: 100%;
   height: auto;
+}
+
+.blog-img-index {
+  height: 200px;
 }
 
 .blog-img img {
@@ -419,7 +399,7 @@ header {
 
 .blog-text a {
   text-decoration: none;
-  color: var(--clr-secondary);
+  color: var(--clr-primary);
 }
 
 .blog-text a:hover {
@@ -438,26 +418,6 @@ header {
   margin-left: auto;
   margin-right: auto;
 }
-
-#price-value {
-  display: inline-block;
-}
-
-/* .blog-tier img {
-  color: #000;
-} */
-
-/* .blog a {
-  color: var(--clr-secondary);
-} */
-
-/* .btn-earn a {
-  color: var(--clr-primary);
-} */
-
-/* .btn-redeem {
-  color: var(--clr-primary);
-} */
 
 
 
@@ -483,8 +443,8 @@ form select, input[type="text"] {
 
 form button {
   padding: 10px 20px;
-  background-color: #333;
-  color: white;
+  background-color: var(--clr-secondary);
+  color: var(--clr-primary);
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -492,7 +452,7 @@ form button {
 }
 
 form button:hover {
-  background-color: #555;
+  background-color: var(--clr-secondary);
 }
 
 #redeem-result {
@@ -503,8 +463,8 @@ form button:hover {
 #undo {
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
+  background-color: var(--clr-accent3);
+  color: var(--clr-primary);
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -512,7 +472,7 @@ form button:hover {
 }
 
 #undo:hover {
-  background-color: #0056b3;
+  background-color: var(--clr-accent3);
 }
 
 /* Loading Spinner
@@ -540,14 +500,14 @@ form button:hover {
   overflow-y: auto;  /* Enable vertical scrolling */
   border: 1px solid #ccc; /* Optional: Add a border for clarity */
   padding: 10px;
-  background-color: #f9f9f9; /* Optional: Background color */
+  background-color: var(--clr-primary); /* Optional: Background color */
 }
 
 #points-history-list li {
   margin-bottom: 10px; /* Spacing between items */
   padding: 5px;
   list-style-type: none; /* Optional: Remove bullet points */
-  background-color: #fff; /* Optional: Set a background color */
+  background-color: var(--clr-primary); /* Optional: Set a background color */
   border-radius: 4px; /* Optional: Rounded corners */
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Optional: Shadow for better visuals */
 }
@@ -721,7 +681,7 @@ form button:hover {
   margin-top: 20px;
   padding: 20px;
   border-radius: 10px;
-  background-color: #f9f9f9;
+  background-color: var(--clr-primary);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -733,7 +693,7 @@ form button:hover {
   margin-bottom: 20px;
   border: 1px solid #ddd;
   border-radius: 10px;
-  background-color: white;
+  background-color: var(--clr-primary);
 }
 
 .flight-option img {
@@ -747,7 +707,7 @@ form button:hover {
 }
 
 .select-flight-btn {
-  background-color: #003399;
+  background-color: var(--clr-accent3);
   color: white;
   padding: 10px 20px;
   border: none;
@@ -756,7 +716,7 @@ form button:hover {
 }
 
 .select-flight-btn:hover {
-  background-color: #001f66;
+  background-color: var(--clr-accent);
 }
 
 /* Seat Selection page */
