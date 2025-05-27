@@ -3,34 +3,39 @@ document.addEventListener('DOMContentLoaded', () => {
   console.log(pointsHistoryList);  // Should not be null
   const pointsElement = document.getElementById('user-points');
   let points = parseInt(localStorage.getItem('points')) || 0;
+  let lifetimePoints = parseInt(localStorage.getItem('lifetimePoints')) || 0;
 
-  function logPointsHistory(action, pointsChanged) {
-      const date = new Date().toLocaleString();
-      const listItem = document.createElement('li');
-      listItem.textContent = `${date}: ${action} ${pointsChanged > 0 ? '+' : ''}${pointsChanged} points`;
-      document.getElementById('points-history-list').appendChild(listItem);
+ function logPointsHistory(action, pointsChanged) {
+        const date = new Date().toLocaleString();
+        const listItem = document.createElement('li');
+        listItem.textContent = `${date}: ${action} ${pointsChanged > 0 ? '+' : ''}${pointsChanged} points`;
+        document.getElementById('points-history-list').appendChild(listItem);
 
-      const history = JSON.parse(localStorage.getItem('pointsHistory')) || [];
-      history.push({ date, action, pointsChanged });
-      localStorage.setItem('pointsHistory', JSON.stringify(history));
+        const history = JSON.parse(localStorage.getItem('pointsHistory')) || [];
+        history.push({ date, action, pointsChanged });
+        localStorage.setItem('pointsHistory', JSON.stringify(history));
   }
 
   // Handle earning points for Economy
   document.getElementById('earn-economy').addEventListener('click', (e) => {
-      e.preventDefault();
-      const pointsEarned = 300;
-      points += pointsEarned;
-      localStorage.setItem('points', points);
-      pointsElement.textContent = `Loyalty Points: ${points}`;
-      logPointsHistory('Earned from Economy Flight', pointsEarned);
-  });
+    e.preventDefault();
+    const pointsEarned = 300;
+    points += pointsEarned;
+    lifetimePoints += pointsEarned;
+    localStorage.setItem('points', points);
+    localStorage.setItem('lifetimePoints', lifetimePoints);
+    pointsElement.textContent = `Loyalty Points: ${points} pts`;
+    logPointsHistory('Earned from Economy Flight', pointsEarned);
+});
 
   // Handle earning points for Premium Economy
   document.getElementById('earn-premium-economy').addEventListener('click', (e) => {
       e.preventDefault();
       const pointsEarned = 500;
       points += pointsEarned;
+      lifetimePoints += pointsEarned;
       localStorage.setItem('points', points);
+      localStorage.setItem('lifetimePoints', lifetimePoints);
       pointsElement.textContent = `Loyalty Points: ${points}`;
       logPointsHistory('Earned from Premium Economy Flight', pointsEarned);
   });
@@ -40,7 +45,9 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault();
       const pointsEarned = 800;
       points += pointsEarned;
+      lifetimePoints += pointsEarned;
       localStorage.setItem('points', points);
+      localStorage.setItem('lifetimePoints', lifetimePoints);
       pointsElement.textContent = `Loyalty Points: ${points}`;
       logPointsHistory('Earned from Business Class Flight', pointsEarned);
   });
@@ -50,7 +57,9 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault();
       const pointsEarned = 1200;
       points += pointsEarned;
+      lifetimePoints += pointsEarned;
       localStorage.setItem('points', points);
+      localStorage.setItem('lifetimePoints', lifetimePoints);
       pointsElement.textContent = `Loyalty Points: ${points}`;
       logPointsHistory('Earned from First Class Flight', pointsEarned);
   });

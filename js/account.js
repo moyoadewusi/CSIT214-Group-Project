@@ -1,7 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
     const deleteAccountButton = document.getElementById('delete-account');
     const pointsElement = document.getElementById('user-points');
+    const lifetimePointsElement = document.getElementById('user-lifetime-balance');
     const pointsHistoryList = document.getElementById('points-history-list');
+
+    // Get the current points and lifetime points from localStorage
+    let points = parseInt(localStorage.getItem('points')) || 0;
+    let lifetimePoints = parseInt(localStorage.getItem('lifetimePoints')) || 0;
+
+    // Display the current points and lifetime points
+    pointsElement.textContent = `Loyalty Points: ${points} pts`;
+    lifetimePointsElement.textContent = `Lifetime Earning: ${lifetimePoints} pts`;
 
     // Delete account function
     deleteAccountButton.addEventListener('click', (e) => {
@@ -15,7 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
             localStorage.clear();
 
             // Reset the points display and points history
-            pointsElement.textContent = '0';
+            pointsElement.textContent = '0 pts';
+            lifetimePointsElement.textContent = 'Lifetime Earning: 0 pts';
             pointsHistoryList.innerHTML = '';
 
             // Optional: Provide feedback to the user
