@@ -87,3 +87,27 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const confirmSeatBtn = document.querySelector('.confirm-seat-btn'); // The button in seat selection
+    const confirmationModal = document.getElementById('confirmation-modal');
+    const cancelBtn = document.getElementById('cancel-btn');
+    const proceedBtn = document.getElementById('proceed-btn');
+
+    // When the Confirm button is clicked, show the confirmation modal
+    confirmSeatBtn.addEventListener('click', () => {
+        confirmationModal.style.display = 'block';
+    });
+
+    // If the Cancel button is clicked, hide the modal
+    cancelBtn.addEventListener('click', () => {
+        confirmationModal.style.display = 'none';
+    });
+
+    // If the Proceed button is clicked, proceed with the transaction
+    proceedBtn.addEventListener('click', () => {
+        confirmationModal.style.display = 'none';
+        // You can add logic here to handle point deduction or form submission
+        alert('Points have been used!');
+    });
+});

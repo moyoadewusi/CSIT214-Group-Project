@@ -830,3 +830,56 @@ form button:hover {
 .actions button:hover {
   background-color: #001f66;
 }
+
+/* Modal Styles */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  z-index: 1000;
+}
+
+.modal-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.modal-btn {
+  padding: 10px 20px;
+  border: 1px solid #003399;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+}
+
+#cancel-btn {
+  background-color: white;
+  color: black;
+}
+
+#proceed-btn {
+  background-color: white;
+  color: black;
+}
+
+.modal-btn:hover {
+  background-color: #003399;
+  color: white;
+}
+
+.modal h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
